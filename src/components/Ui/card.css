@@ -1,0 +1,93 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.hero{
+  width: 240px;
+  margin: 15px 0px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.hero .main {
+    display: flex;
+    flex-direction: column;
+}
+
+.poster{
+    position: relative;
+    background-color: #ddd; /* fallback */
+}
+
+.poster img {
+    width: 200px;
+    height: 270px;
+    box-shadow: 0px 0px 10px black;
+    transform: translateY(-8%);
+}
+.ticket-content .ticket-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #fff;
+  border-radius:0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: black;
+}
+.ticket-container .ticket-btn:hover {
+  background-color: #181717;
+}
+
+/* Responsive: Tablet (2 cards) */
+@media (max-width:760px) {
+ .hero{
+  width: 190px;
+  margin: 8px 0px;
+}
+
+.poster{
+    position: relative;
+    background-color: #ddd; /* fallback */
+}
+
+.poster img {
+    width: 150px;
+    height: 200px;
+    box-shadow: 0px 0px 10px black;
+    transform: translateY(-8%);
+} 
+}
+
+@media (max-width: 468px) {
+ ul{
+    padding: 20px;
+ }
+    .hero{
+  width: 250px;
+  margin: 8px 0px;
+}
+
+.poster{
+    position: relative;
+    background-color: #ddd; /* fallback */
+}
+
+.poster img {
+    width: 200px;
+    height: 270px;
+    box-shadow: 0px 0px 10px black;
+    transform: translateY(-8%);
+}
+}
